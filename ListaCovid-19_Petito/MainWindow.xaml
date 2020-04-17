@@ -1,0 +1,23 @@
+﻿<Window x:Class="ListaCovid_19_Petito.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ListaCovid_19_Petito"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="507" Width="1099">
+    <Grid Margin="0,0,-8,-6">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF00B9FF" Offset="0"/>
+                <GradientStop Color="#FF00FFC5" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Btn_Covid_19" Content="Carica Dati" HorizontalAlignment="Left" Margin="40,45,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="Btn_Covid_19_Click"/>
+        <ListBox x:Name="Lstl_Covid_19" HorizontalAlignment="Left" Height="391" Margin="200,45,0,0" VerticalAlignment="Top" Width="755"/>
+
+    </Grid>
+</Window>
